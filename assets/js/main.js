@@ -73,38 +73,20 @@ modalCloses.forEach((modalClose) => {
 })
 /*==================== PORTFOLIO SWIPER  ====================*/
 // Initialize Swiper with manual navigation
-const swiperContainer = document.querySelector('.portfolio__container');
-const slides = document.querySelectorAll('.portfolio__content');
-let currentSlide = 0;
+document.addEventListener("DOMContentLoaded", function() {
+    // Find the Show All Projects button
+    const showAllProjectsButton = document.querySelector('.show-all-projects .button');
 
-function showSlide(index) {
-    slides.forEach((slide) => {
-        slide.style.display = 'none';
+    // Add a click event listener to the button
+    showAllProjectsButton.addEventListener('click', function(event) {
+        // Prevent default link behavior
+        event.preventDefault();
+
+        // Navigate to all_projects.html
+        window.location.href = 'all_projects.html';
     });
-    slides[index].style.display = 'block';
-}
+});
 
-function nextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
-}
-
-function prevSlide() {
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    showSlide(currentSlide);
-}
-
-// Remove Swiper initialization code
-
-// Event listeners for navigation buttons
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
-
-nextBtn.addEventListener('click', nextSlide);
-prevBtn.addEventListener('click', prevSlide);
-
-// Show the initial slide
-showSlide(currentSlide);
 
 
 /*==================== TESTIMONIAL ====================*/
