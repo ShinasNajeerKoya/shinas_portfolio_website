@@ -1,7 +1,7 @@
 /*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu = document.getElementById('nav-menu'),
-    navToggle = document.getElementById('nav-toggle'),
-    navClose = document.getElementById('nav-close')
+navToggle = document.getElementById('nav-toggle'),
+navClose = document.getElementById('nav-close')
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
 if (navToggle) {
@@ -29,7 +29,7 @@ function linkAction() {
 navLink.forEach(n => n.addEventListener('click', linkAction))
 /*==================== ACCORDION SKILLS ====================*/
 const skillsContent = document.getElementsByClassName('skills__content'),
-    skillsHeader = document.querySelectorAll('.skills__header')
+skillsHeader = document.querySelectorAll('.skills__header')
 
 function toggleSkills() {
     let itemClass = this.parentNode.className
@@ -51,8 +51,8 @@ skillsHeader.forEach((el) => {
 
 /*==================== SERVICES MODAL ====================*/
 const modalViews = document.querySelectorAll('.services__modal'),
-    modalBtns = document.querySelectorAll('.services__button'),
-    modalCloses = document.querySelectorAll('.services__modal-close')
+modalBtns = document.querySelectorAll('.services__button'),
+modalCloses = document.querySelectorAll('.services__modal-close')
 
 let modal = function (modalClick) {
     modalViews[modalClick].classList.add('active-modal')
@@ -72,38 +72,43 @@ modalCloses.forEach((modalClose) => {
     })
 })
 /*==================== PORTFOLIO SWIPER  ====================*/
-let swiperPortfolio = new Swiper('.portfolio__container', {
-    cssMode: true,
-    loop: true,
+// Initialize Swiper with manual navigation
+const swiperContainer = document.querySelector('.portfolio__container');
+const slides = document.querySelectorAll('.portfolio__content');
+let currentSlide = 0;
 
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-});
+function showSlide(index) {
+    slides.forEach((slide) => {
+        slide.style.display = 'none';
+    });
+    slides[index].style.display = 'block';
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+}
+
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+}
+
+// Remove Swiper initialization code
+
+// Event listeners for navigation buttons
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+nextBtn.addEventListener('click', nextSlide);
+prevBtn.addEventListener('click', prevSlide);
+
+// Show the initial slide
+showSlide(currentSlide);
+
 
 /*==================== TESTIMONIAL ====================*/
-let swiperTestimonial = new Swiper('.testimonial__container', {
-    loop: true,
-    grabCursor: true,
-    spaceBetween: 48,
 
-
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        dynamicBullets: true,
-    },
-    breakpoints:{
-        568:{
-            slidesPerview: 2,
-        }
-    }
-});
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
@@ -143,7 +148,7 @@ function scrollUp(){
 window.addEventListener('scroll', scrollUp)
 
 
-/*==================== DARK LIGHT THEME ====================*/ 
+/*==================== DARK LIGHT THEME ====================*/
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'uil-sun'
@@ -158,9 +163,9 @@ const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-mo
 
 // We validate if the user previously chose a topic
 if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-  themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
+    // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+    themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
 }
 
 // Activate / deactivate the theme manually with the button

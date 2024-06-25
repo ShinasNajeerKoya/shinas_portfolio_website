@@ -682,63 +682,60 @@ img {
 
 /*==================== PORTFOLIO ====================*/
 .portfolio__container {
-    overflow: initial;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Adjust as needed for spacing between projects */
 }
 
 .portfolio__content {
-    padding: 0 1.5rem;
+    padding: 1.5rem;
+    background-color: #fff; /* Example background color */
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Example box shadow */
 }
 
 .portfolio__img {
-    width: 265px;
-    border-radius: .5rem;
-    justify-self: center;
+    width: 100%;
+    border-radius: 0.5rem;
 }
 
 .portfolio__title {
-    font-size: var(--h3-font-size);
-    margin-bottom: var(--mb-0-5);
+    font-size: 1.5rem; /* Example font size */
+    margin-bottom: 0.5rem;
 }
 
 .portfolio__description {
-    margin-bottom: var(--mb-0-75);
+    margin-bottom: 0.75rem;
 }
 
 .portfolio__button:hover .button__icon {
-    transform: translateX(.25rem);
+    transform: translateX(0.25rem);
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
-    content: '';
+.portfolio__navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem; /* Example margin top */
 }
 
-.swiper-portfolio-icon {
-    font-size: 2rem;
-    color: var(--first-color);
+.portfolio__nav-btn {
+    padding: 1rem 2rem;
+    background-color: #007bff; /* Example button background color */
+    color: #fff; /* Example button text color */
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin: 0 0.5rem; /* Adjust as needed */
 }
 
-.swiper-button-prev {
-    left: -.5rem;
-}
-
-.swiper-button-next {
-    right: -.5rem;
-}
-
-.swiper-container-horizontal>.swiper-pagination-bullets {
-    bottom: -2.5rem;
-}
-
-.swiper-pagination-bullet-active {
-    background-color: var(--first-color);
-}
-
-.swiper-button-prev,
-.swiper-button-next,
-.swiper-pagination-bullet {
+.portfolio__nav-btn:focus {
     outline: none;
 }
+
+.portfolio__nav-btn:hover {
+    background-color: #0056b3; /* Example hover background color */
+}
+
 
 /*==================== PROJECT IN MIND ====================*/
 .project {
