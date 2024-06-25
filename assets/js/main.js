@@ -46,32 +46,8 @@ skillsHeader.forEach((el) => {
     el.addEventListener('click', toggleSkills)
 })
 
-/*==================== QUALIFICATION TABS ====================*/
 
-
-/*==================== SERVICES MODAL ====================*/
-const modalViews = document.querySelectorAll('.services__modal'),
-modalBtns = document.querySelectorAll('.services__button'),
-modalCloses = document.querySelectorAll('.services__modal-close')
-
-let modal = function (modalClick) {
-    modalViews[modalClick].classList.add('active-modal')
-}
-
-modalBtns.forEach((modalBtn, i) => {
-    modalBtn.addEventListener('click', () => {
-        modal(i)
-    })
-})
-
-modalCloses.forEach((modalClose) => {
-    modalClose.addEventListener('click', () => {
-        modalViews.forEach((modalView) => {
-            modalView.classList.remove('active-modal')
-        })
-    })
-})
-/*==================== PORTFOLIO SWIPER  ====================*/
+/*==================== project category  ====================*/
 // Initialize Swiper with manual navigation
 document.addEventListener("DOMContentLoaded", function() {
     // Find the Show All Projects button
@@ -83,13 +59,11 @@ document.addEventListener("DOMContentLoaded", function() {
         event.preventDefault();
 
         // Navigate to all_projects.html
-        window.location.href = 'all_projects.html';
+        window.location.href = 'screens/all_projects.html';
     });
 });
 
 
-
-/*==================== TESTIMONIAL ====================*/
 
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
