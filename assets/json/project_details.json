@@ -5,7 +5,7 @@
       "title": "PixaVista",
       "subtitle": "Application to get your High Quality wallpaper within a single click.",
       "subtitleTwoLines": "Application to get your High Quality wallpaper within a single click. Application to get your High Quality wallpaper within a single click.",
-      "productImage": "../assets/images/application_assets/1_mockup_thumbnail/mockup_pixavista.png",
+      "productImage": "assets/images/application_assets/1_mockup_thumbnail/mockup_pixavista.png",
       "projectDetailsUrl": "screens/project_details.html",
       "projectGithubLink": "https://github.com/rammcodes/dopefolio",
       "description": "PixaVista is an Open-Source project which is a simple and clean multi-page portfolio website template for developers. I created this project for developers to quickly build a good-looking and fast-performing multi-page portfolio without having to code their portfolio from scratch.",
