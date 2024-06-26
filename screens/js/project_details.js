@@ -19,12 +19,28 @@ document.addEventListener('DOMContentLoaded', async () => {
         document.getElementById('project-title').textContent = project.title;
         document.getElementById('project-subtitleTwoLines').textContent = project.subtitleTwoLines;
         document.getElementById('project-image').src = `../${project.productImage}`;
-        document.getElementById('project-description').textContent = project.description;
+        //        document.getElementById('project-description').textContent = project.description;
+
+
+
+        //
         document.getElementById('project-github-linkTop').href = project.projectGithubLink;
         document.getElementById('project-github-linkBottom').href = project.projectGithubLink;
 
+        //for description paragraph
+        // Clear existing description content
+        const descriptionContainer = document.getElementById('project-description');
+        descriptionContainer.innerHTML = '';
 
+        // Add paragraphs to the description container with a line break after each
+        project.description.forEach(paragraph => {
+            const paragraphElement = document.createElement('p');
+            paragraphElement.textContent = paragraph;
+            descriptionContainer.appendChild(paragraphElement);
+            descriptionContainer.appendChild(document.createElement('br')); // Add a line break after each paragraph
+        });
 
+        //for scrollable project snapshots
         const snapshotsContainer = document.getElementById('project-snapshots');
         snapshotsContainer.innerHTML = ''; // Clear existing content
 
@@ -36,6 +52,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             snapshotsContainer.appendChild(img);
         });
 
+
+        //for tools section
         const skillsContainer = document.getElementById('project-skills');
         skillsContainer.innerHTML = ''; // Clear existing content
 

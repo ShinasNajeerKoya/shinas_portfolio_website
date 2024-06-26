@@ -2,36 +2,93 @@
   "projects": [
     {
       "id": "pixa_vista",
-      "title": "PixaVista",
-      "subtitle": "Application to get your High Quality wallpaper within a single click.",
-      "subtitleTwoLines": "Application to get your High Quality wallpaper within a single click. Application to get your High Quality wallpaper within a single click.",
-      "productImage": "assets/images/application_assets/1_mockup_thumbnail/mockup_pixavista.png",
+      "title": "Pixa Vista",
+      "subtitle": "Personalize device screens with high quality wallpapers.",
+      "subtitleTwoLines": "PixaVista is a wallpaper app that offers a vast collection of high-quality images, allowing users to personalize their device's home and lock screens effortlessly.",
+      "productImage": "assets/images/application_assets/1_mockup_thumbnail/pixa_vista_mockup.png",
       "projectDetailsUrl": "screens/project_details.html",
-      "projectGithubLink": "https://github.com/rammcodes/dopefolio",
-      "description": "PixaVista is an Open-Source project which is a simple and clean multi-page portfolio website template for developers. I created this project for developers to quickly build a good-looking and fast-performing multi-page portfolio without having to code their portfolio from scratch.",
+      "projectGithubLink": "https://github.com/ShinasNajeerKoya/PixaVista-ElevateYourScreenStyle",
+      "description": [
+        "PixaVista is a feature-rich wallpaper app designed to elevate the style of your device's screen. It offers a vast collection of high-quality images, allowing users to discover and set stunning wallpapers that reflect their personal tastes and moods. The app's search functionality makes it easy to find specific wallpapers by keywords or categories, while predefined categories help users explore themed collections effortlessly.",
+        "One of the standout advantages of PixaVista is its user-friendly interface, which enables quick and easy customization of home and lock screens. Users can set their favorite wallpapers with a single tap and save them to their device's gallery for offline access or sharing. The app also includes customization options such as cropping and scaling, ensuring that wallpapers fit perfectly on any device screen.",
+        "PixaVista is perfect for anyone looking to personalize their device, from casual users who enjoy changing their wallpapers frequently to those seeking specific themes for special occasions or moods. The app’s intuitive design and vast selection cater to various preferences, making it accessible and enjoyable for a wide audience.",
+        "The app is easy to install and run, with straightforward setup instructions and a seamless user experience. By following a few simple steps, users can clone the repository, configure the necessary permissions in the Android Manifest, and start exploring the extensive wallpaper collection. PixaVista is an excellent tool for enhancing the visual appeal of any device, providing a delightful and personalized experience for all its users."
+      ],
       "snapshots": [
-        "../assets/images/application_assets/iPhone 13 Max.png",
-        "../assets/images/application_assets/iPhone 13 Max.png",
-        "../assets/images/application_assets/iPhone 13 Max.png",
-        "../assets/images/application_assets/iPhone 13 Max.png",
-        "../assets/images/application_assets/iPhone 13 Max.png",
-        "../assets/images/application_assets/iPhone 13 Max.png"
+        "../assets/images/application_assets/pixa_vista/pixa_vista_home_page.png",
+        "../assets/images/application_assets/pixa_vista/pixa_vista_category_results_1.png",
+        "../assets/images/application_assets/pixa_vista/pixa_vista_category_results_2.png",
+        "../assets/images/application_assets/pixa_vista/pixa_vista_full_screen.png",
+        "../assets/images/application_assets/pixa_vista/pixa_vista_search_results_1.png",
+        "../assets/images/application_assets/pixa_vista/pixa_vista_search_results_2.png",
+        "../assets/images/application_assets/pixa_vista/pixa_vista_loading_screen_1.png",
+        "../assets/images/application_assets/pixa_vista/pixa_vista_loading_screen_2.png",
+        "../assets/images/application_assets/pixa_vista/pixa_vista_no_internet_error.png",
+        "../assets/images/application_assets/pixa_vista/pixa_vista_page_not_found_error.png",
+        "../assets/images/application_assets/pixa_vista/pixa_vista_saved_images.png",
+        "../assets/images/application_assets/pixa_vista/pixa_vista_saved_notification.png",
+        "../assets/images/application_assets/pixa_vista/pixa_vista_search_results_3.png",
+        "../assets/images/application_assets/pixa_vista/pixa_vista_splash_screen_1.png",
+        "../assets/images/application_assets/pixa_vista/pixa_vista_splash_screen_2.png"
       ],
       "skills": [
+        "Flutter",
         "Dart",
-        "CSS",
-        "JavaScript",
-        "SASS",
+        "Firebase",
+        "Figma",
+        "Postman API",
         "GIT",
-        "Github"
+        "Github",
+        "Android Studio"
       ]
     },
     {
       "id": "note_trove",
-      "title": "NoteTrove",
+      "title": "Note Trove",
+      "subtitle": "Effortlessly Organize Your Notes with Intuitive Management.",
+      "subtitleTwoLines": "An intuitive note-taking app with powerful organization and customization features, designed to enhance productivity and creativity.",
+      "productImage": "assets/images/application_assets/1_mockup_thumbnail/notetrove_mockup.png",
+      "projectDetailsUrl": "screens/project_details.html",
+      "projectGithubLink": "https://github.com/ShinasNajeerKoya/NoteTrove_OrganizeYourThoughts",
+      "description": [
+        "NoteTrove is a comprehensive note-taking application designed to facilitate the seamless organization and management of notes. It empowers users to create, edit, export, import, and categorize their notes effortlessly. With a user-friendly interface and a range of customization options including colors and background images, NoteTrove enhances productivity by allowing users to tailor their note-taking experience to personal preferences.",
+        "This app is widely utilized by individuals across various domains such as students, professionals, creatives, and anyone needing to organize their thoughts and ideas efficiently. Its versatility makes it suitable for personal use, academic purposes, professional environments, and creative projects alike.",
+        "The key advantages of NoteTrove include its intuitive functionality, which simplifies the process of creating and editing notes. Users can easily export and import notes, ensuring seamless accessibility across different devices and platforms. The ability to categorize notes enables efficient organization by topics, projects, or any customized criteria, further enhancing productivity and clarity of thought.",
+        "Ideal for those seeking to streamline their workflow and enhance organizational skills, NoteTrove offers robust error handling to ensure a reliable user experience. Its accessibility features make it suitable for users of all levels of technical proficiency, from novices to experienced professionals.",
+        "Whether for capturing ideas on the go, maintaining study notes, managing tasks, or documenting creative inspirations, NoteTrove stands out as a versatile tool that integrates seamlessly into daily routines. Its appeal lies in its ability to adapt to individual needs while providing a structured approach to note-taking, making it an indispensable companion for enhancing productivity and staying organized effectively."
+      ],
+      "snapshots": [
+        "../assets/images/application_assets/note_trove/note_trove_homepage_2.png",
+        "../assets/images/application_assets/note_trove/note_trove_create_note_page.png",
+        "../assets/images/application_assets/note_trove/note_trove_delete_confirmation.png",
+        "../assets/images/application_assets/note_trove/note_trove_edit_note_page.png",
+        "../assets/images/application_assets/note_trove/note_trove_homepage_1.png",
+        "../assets/images/application_assets/note_trove/note_trove_edit_loading_animation.png",
+        "../assets/images/application_assets/note_trove/note_trove_save_confirmation.png",
+        "../assets/images/application_assets/note_trove/note_trove_splash_1.png",
+        "../assets/images/application_assets/note_trove/note_trove_splash_2.png",
+        "../assets/images/application_assets/note_trove/note_trove_loading_animation.png",
+        "../assets/images/application_assets/note_trove/note_trove_no_internet_error.png",
+        "../assets/images/application_assets/note_trove/note_trove_notes_list.png",
+        "../assets/images/application_assets/note_trove/note_trove_page_not_found_error.png"
+      ],
+      "skills": [
+        "Flutter",
+        "Dart",
+        "Firebase",
+        "Figma",
+        "Dribbble",
+        "GIT",
+        "Github",
+        "Android Studio"
+      ]
+    },
+    {
+      "id": "null",
+      "title": "Note Trive",
       "subtitle": "Application to get your High Quality wallpaper within a single click.",
       "subtitleTwoLines": "Application to get your High Quality wallpaper within a single click. Application to get your High Quality wallpaper within a single click.",
-      "productImage": "assets/images/application_assets/1_mockup_thumbnail/notetrove_mockup.png",
+      "productImage": "assets/images/application_assets/1_mockup_thumbnail/mockup_pixavista.png",
       "projectDetailsUrl": "screens/project_details.html",
       "projectGithubLink": "https://github.com/rammcodes/dopefolio",
       "description": "PixaVista is an Open-Source project which is a simple and clean multi-page portfolio website template for developers. I created this project for developers to quickly build a good-looking and fast-performing multi-page portfolio without having to code their portfolio from scratch.",
@@ -51,32 +108,6 @@
         "GIT",
         "Github",
         "bitbucket"
-      ]
-    },
-    {
-      "id": "pixa_vista",
-      "title": "PixaVista",
-      "subtitle": "Application to get your High Quality wallpaper within a single click.",
-      "subtitleTwoLines": "Application to get your High Quality wallpaper within a single click. Application to get your High Quality wallpaper within a single click.",
-      "productImage": "assets/images/application_assets/1_mockup_thumbnail/mockup_pixavista.png",
-      "projectDetailsUrl": "screens/project_details.html",
-      "projectGithubLink": "https://github.com/rammcodes/dopefolio",
-      "description": "PixaVista is an Open-Source project which is a simple and clean multi-page portfolio website template for developers. I created this project for developers to quickly build a good-looking and fast-performing multi-page portfolio without having to code their portfolio from scratch.",
-      "snapshots": [
-        "../assets/images/application_assets/iPhone 13 Max.png",
-        "../assets/images/application_assets/iPhone 13 Max.png",
-        "../assets/images/application_assets/iPhone 13 Max.png",
-        "../assets/images/application_assets/iPhone 13 Max.png",
-        "../assets/images/application_assets/iPhone 13 Max.png",
-        "../assets/images/application_assets/iPhone 13 Max.png"
-      ],
-      "skills": [
-        "Dart",
-        "CSS",
-        "JavaScript",
-        "SASS",
-        "GIT",
-        "Github"
       ]
     },
     {
