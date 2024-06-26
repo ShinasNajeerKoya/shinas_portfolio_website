@@ -68,7 +68,7 @@ function displayProjects(projects, containerId, maxProjects = MAX_PROJECTS_HOMEP
         projectElement.classList.add('portfolio__content', 'grid');
 
         projectElement.innerHTML = `
-            <img src="${project.productImage}" alt="${project.id}" class="portfolio__img">
+            <img src="../${project.productImage}" alt="${project.id}" class="portfolio__img">
                 <div class="portfolio__data">
                   <h3 class="portfolio__title">${project.title}</h3>
                      <p class="portfolio__description">${project.subtitle}</p>
