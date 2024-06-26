@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
 /*====================  for href of case study button - String Concatinated = (../)+(project.link) as it is inside the folder  ====================*/
 
 async function loadProjects() {
-    const response = await fetch('../screens/json/project_container_info_list.json');
+    const response = await fetch('../assets/json/project_details.json');
     const data = await response.json();
     return data.projects;
 }
@@ -29,11 +29,11 @@ function displayProjects(projects, containerId) {
         projectElement.classList.add('portfolio__content', 'grid');
 
         projectElement.innerHTML = `
-                    <img src="${project.image}" alt="${project.title}" class="portfolio__img">
+                    <img src="${project.productImage}" alt="${project.id}" class="portfolio__img">
                     <div class="portfolio__data">
                         <h3 class="portfolio__title">${project.title}</h3>
-                        <p class="portfolio__description">${project.description}</p>
-                        <a href="../${project.link}" class="button button--flex button--small portfolio_-button">
+                        <p class="portfolio__description">${project.subtitle}</p>
+                        <a href="../${project.projectDetailsUrl}?id=${project.id}&projectDetailsUrl=nullForNow" class="button button--flex button--small portfolio_-button">
                             Case Study
                             <i class="uil uil-arrow-right button__icon"></i>
                         </a>

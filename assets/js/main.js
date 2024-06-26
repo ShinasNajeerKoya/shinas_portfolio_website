@@ -51,40 +51,47 @@ skillsHeader.forEach((el) => {
 /*==================== for href of case study button - keep it as it is for (project.link), but in other pages, contactinate with (../)  ====================*/
 const MAX_PROJECTS_HOMEPAGE = 3;
 
+// Function to load projects from JSON
 async function loadProjects() {
-    const response = await fetch('screens/json/project_container_info_list.json');
+    const response = await fetch('assets/json/project_details.json');
     const data = await response.json();
     return data.projects;
 }
 
+// Function to display projects on the index page
 function displayProjects(projects, containerId, maxProjects = MAX_PROJECTS_HOMEPAGE) {
     const container = document.getElementById(containerId);
-    container.innerHTML = '';
+    container.innerHTML = ''; // Clear existing content
 
     projects.slice(0, maxProjects).forEach(project => {
         const projectElement = document.createElement('div');
         projectElement.classList.add('portfolio__content', 'grid');
 
         projectElement.innerHTML = `
-                    <img src="${project.image}" alt="${project.title}" class="portfolio__img">
-                    <div class="portfolio__data">
-                        <h3 class="portfolio__title">${project.title}</h3>
-                        <p class="portfolio__description">${project.description}</p>
-                        <a href="${project.link}" class="button button--flex button--small portfolio_-button">
-                            Case Study
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </a>
-                    </div>
-                `;
+            <img src="${project.productImage}" alt="${project.id}" class="portfolio__img">
+                <div class="portfolio__data">
+                  <h3 class="portfolio__title">${project.title}</h3>
+                     <p class="portfolio__description">${project.subtitle}</p>
+                     <a href="${project.projectDetailsUrl}?id=${project.id}&projectDetailsUrl=nullForNow"
+                         class="button button--flex button--small portfolio_-button">
+                         Case Study
+                         <i class="uil uil-arrow-right button__icon"></i>
+                     </a>
+                </div>
+        `;
 
         container.appendChild(projectElement);
     });
 }
 
+// Main logic to load and display projects
 document.addEventListener('DOMContentLoaded', async () => {
     const projects = await loadProjects();
     displayProjects(projects, 'portfolioContainer');
 });
+
+
+
 
 
 /*==================== project category - show all button  ====================*/

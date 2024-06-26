@@ -190,8 +190,8 @@ textarea {
 }
 
 .btn--med {
-    padding: 1.5rem 5rem;
-    font-size: 1.6rem
+    padding: 1.5rem 8rem;
+    font-size: 2rem
 }
 
 .btn--theme {
@@ -200,11 +200,12 @@ textarea {
 }
 
 .btn--theme-inv {
+    font-size: 1.5rem;
     color: #111;
     background: #fff;
     border: 2px solid #7843E9;
     box-shadow: none;
-    padding: calc(1.5rem - 2px) calc(5rem - 2px)
+    padding: calc(1.82rem - 2px) calc(6.5rem - 2px)
 }
 
 .sec-pad {
@@ -648,20 +649,27 @@ textarea {
     width: 100%; /* Ensure images fill their containers */
 }
 
-.project_snapshots_area {
-    display: flex; /* Use flexbox to arrange containers in a row */
-    justify-content: flex-start; /* Align containers to the start of the flex container */
-    gap: 1rem; /* Add spacing between containers */
-    overflow-x: auto; /* Enable horizontal scrolling if necessary */
-    margin-right: 6rem; /* Adjust margins as needed */
-    /* Just for visualization */
-    padding: 1rem; /* Add padding for better layout */
+.product_snapshot_scroller_area{
+    display:flex;
+
+    width: 100%;
 }
 
 .project_snapshots_container {
-    flex: 0 0 auto; /* Allow containers to shrink and grow as needed */
-    width: 18rem; /* Set a fixed width for each container */
+    display: flex;
+    flex: 0 0 auto;
+    height:45rem;
+
+    width: 100%;  /* Set a fixed width for each container */
+    margin-right: 10px; /* Use flexbox to arrange containers in a row */
+    justify-content: flex-start; /* Align containers to the start of the flex container */
+    gap: 1rem; /* Add spacing between containers */
+    overflow-x: auto; /* Enable horizontal scrolling if necessary */
+    padding: 1rem; /* Add padding for better layout */
 }
+
+
+
 
 .project-details__content-main {
     width: 100%;

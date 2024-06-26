@@ -5,12 +5,9 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-
     <title>Shinas Koya</title>
     <meta name="description" content="Case study page of Project"/>
-
     <link rel="stylesheet" href="../screens/css/project_details.css"/>
-
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
@@ -18,6 +15,9 @@
 </head>
 
 <body>
+
+<!--header-->
+
 <header class="header">
     <div class="header__content">
         <div class="header__logo-container">
@@ -30,125 +30,75 @@
         </div>
     </div>
 </header>
-<section class="project-cs-hero">
-    <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Title_pixavista</h1>
-        <div class="project-cs-hero__info">
-            <p class="text-primary">
-                This page contains the case study of Dopefolio Open-Source Project which includes
-                the Project Overview, Tools Used and Live Links to the official
-                product.
-            </p>
-        </div>
-        <div class="project-cs-hero__cta">
-            <a href="" class="btn btn--bg" target="_blank"
-               rel="noreferrer">Project
-                Link</a>
-        </div>
-    </div>
-</section>
-<section class="project-details">
-    <div class="main-container">
-        <div class="project-details__content">
-            <div class="project-details__showcase-img-cont">
-                <img src="../assets/images/application_assets/1_mockup_thumbnail/mockup_pixavista.png"
-                     alt="Project Image"
-                     class="project-details__showcase-img"/>
-            </div>
-            <div class="project-details__content-main">
-                <div class="project-details__desc">
-                    <h2 class="project-details__content-title">Project Overview</h2>
-                    <p class="project-details__desc-para">
-                        Dopefolio is an Open-Source project which is a simple and clean multi-page
-                        portfolio website template for
-                        developers. I created this project for developers to quickly build a
-                        good-looking and fast-performing
-                        multi-page portfolio without having to code their portfolio from scratch.
-                    <p class="project-details__desc-para">
-                        Since the launch of this project, It has received more than 2k stars on
-                        Github and it has also got
-                        featured on hundreds of sites and CSS-tricks.com has also featured this
-                        template as the hottest frontend
-                        tool of 2021 in one of their articles which you can
 
-                    </p>
-                    <p class="project-details__desc-para">
-                        Dopefolio is now being used by thousands of developers globally and it has
-                        helped many people in landing
-                        jobs & opportunities which makes me happy that my creation is helping other
-                        people in building their
-                        careers.
-                    </p>
-                    <p class="project-details__desc-para">
-                        It has many other features like Dopefolio's repo contains a playground link
-                        which people can use to test
-                        the template with different theme colours to find their own preferred
-                        primary colour for the template.
-                    </p>
-                    <p class="project-details__desc-para">
-                        Feel free to check out the Project by visiting the Project Link.
-                    </p>
+<!-- Main Content -->
+<main class="main-content">
+    <!-- Project header(title/subTitle) Section -->
+    <section class="project-cs-hero">
+        <div class="project-cs-hero__content">
+            <h1 class="heading-primary" id="project-title"></h1>
+            <div class="project-cs-hero__info">
+                <p class="text-primary" id="project-subtitleTwoLines"></p>
+            </div>
+            <div class="project-cs-hero__cta">
+                <a id="backButtonTop"
+                   class="btn  btn--theme-inv project-details__links-btn"
+                   href=""
+                   rel="noopener noreferrer"
+                >Go Back</a>
+                <a id="project-github-linkTop"
+                   class="btn btn--med btn--theme project-details__links-btn"
+                   target="_blank" rel="noopener noreferrer">Project Link</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details Section -->
+    <section class="project-details">
+        <div class="main-container">
+            <div class="project-details__content">
+                <div class="project-details__showcase-img-cont">
+                    <img id="project-image" alt="Project Image"
+                         class="project-details__showcase-img" src="">
                 </div>
-                <div class="project-details__tools-used">
-                    <h2 class="project-details__content-title">Screenshots Area</h2>
-                    <div class="project_snapshots_area">
-                        <div class="project_snapshots_container">
-                            <img src="../assets/images/application_assets/iPhone 13 Max.png"
-                                 alt="Project Image"
-                                 class="project-details__showcase-img"/>
-                        </div>
-                        <div class="project_snapshots_container">
-                            <img src="../assets/images/application_assets/iPhone 13 Max.png"
-                                 alt="Project Image"
-                                 class="project-details__showcase-img"/>
-                        </div>
-                        <div class="project_snapshots_container">
-                            <img src="../assets/images/application_assets/iPhone 13 Max.png"
-                                 alt="Project Image"
-                                 class="project-details__showcase-img"/>
-                        </div>
-                        <div class="project_snapshots_container">
-                            <img src="../assets/images/application_assets/iPhone 13 Max.png"
-                                 alt="Project Image"
-                                 class="project-details__showcase-img"/>
-                        </div>
-                        <div class="project_snapshots_container">
-                            <img src="../assets/images/application_assets/iPhone 13 Max.png"
-                                 alt="Project Image"
-                                 class="project-details__showcase-img"/>
-                        </div>
-                        <div class="project_snapshots_container">
-                            <img src="../assets/images/application_assets/iPhone 13 Max.png"
-                                 alt="Project Image"
-                                 class="project-details__showcase-img"/>
+                <div class="project-details__content-main">
+                    <div class="project-details__desc">
+                        <h2 class="project-details__content-title">Project Overview</h2>
+                        <p id="project-description" class="project-details__desc-para"></p>
+                    </div>
+                    <div class="project-details__tools-used">
+                        <h2 class="project-details__content-title">Screenshots Area</h2>
+                        <div class="product_snapshot_scroller_area">
+                            <div id="project-snapshots" class="project_snapshots_container">
+                                <!-- Project Snapshots here-->
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="project-details__tools-used">
-                    <h2 class="project-details__content-title">Tools Used</h2>
-                    <div class="skills">
-                        <div class="skills__skill">Dart</div>
-                        <div class="skills__skill">CSS</div>
-                        <div class="skills__skill">JavaScript</div>
-                        <div class="skills__skill">SASS</div>
-                        <div class="skills__skill">GIT</div>
-                        <div class="skills__skill">Github</div>
+                    <div class="project-details__tools-used">
+                        <h2 class="project-details__content-title">Tools Used</h2>
+                        <div id="project-skills" class="skills">
+                            <!-- Project Tools here-->
+                        </div>
                     </div>
-                </div>
-                <div class="project-details__links">
-                    <h2 class="project-details__content-title">See Live</h2>
-                    <a href="https://github.com/rammcodes/dopefolio"
-                       class="btn btn--med btn--theme project-details__links-btn"
-                       target="_blank" rel="noreferrer">Project Link</a>
-                    <a href="/" class="btn btn--med btn--theme-inv project-details__links-btn">Go
-                        Back</a>
+                    <div class="project-details__links">
+                        <h2 class="project-details__content-title">See Live</h2>
+                        <a id="project-github-linkBottom"
+                           class="btn btn--med btn--theme project-details__links-btn"
+                           target="_blank" rel="noopener noreferrer">Project Link</a>
+                        <a href=""
+                           class="btn btn--med btn--theme-inv project-details__links-btn"
+                           id="backButtonBottom"
+                        >Go Back</a>
+
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+</main>
 
 
+<!--footer-->
 <footer class="footer">
     <div class="footer__bg">
         <div class="footer__container">
@@ -157,33 +107,27 @@
                 <span class="footer__subtitle">Flutter Developer</span>
             </div>
             <div class="footer__social">
-                <a href="https://www.linkedin.com/in/shinas-koya-a43a8b202/"
-                   target="_blank" class="footer__social__button">
-                    <img width="27" height="27"
-                         src="../assets/images/skills_assets/linkedin.svg"
+                <a href="https://www.linkedin.com/in/shinas-koya-a43a8b202/" target="_blank"
+                   class="footer__social__button">
+                    <img width="27" height="27" src="../assets/images/skills_assets/linkedin.svg"
                          alt="linkedin"/>
                 </a>
-
-                <a href="https://github.com/ShinasKoya00"
-                   target="_blank" class="footer__social__button">
+                <a href="https://github.com/ShinasKoya00" target="_blank"
+                   class="footer__social__button">
                     <img width="25" height="25"
-                         src="../assets/images/skills_assets/github_outline.svg"
-                         alt="github"/>
+                         src="../assets/images/skills_assets/github_outline.svg" alt="github"/>
                 </a>
-                <a href="mailto:shinasnajeerkoya@gmail.com"
-                   target="_blank" class="footer__social__button">
+                <a href="mailto:shinasnajeerkoya@gmail.com" target="_blank"
+                   class="footer__social__button">
                     <img width="22" height="22"
                          src="https://img.icons8.com/ios/100/ededed/gmail-new.png" alt="gmail"/>
                 </a>
-
             </div>
         </div>
         <p class="footer__copy">&copy; 2024 Shinas Koya | All Rights Reserved</p>
     </div>
 </footer>
 
-<script src="../screens/js"></script>
-
+<script src="../screens/js/project_details.js"></script>
 </body>
-
 </html>
