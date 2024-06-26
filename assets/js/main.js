@@ -70,7 +70,7 @@ function displayProjects(projects, containerId, maxProjects = MAX_PROJECTS_HOMEP
         projectElement.innerHTML = `
             <img src="${project.productImage}" alt="${project.id}" class="portfolio__img">
                 <div class="portfolio__data">
-                  <h3 class="portfolio__title">${project.title}</h3>
+                  <h3 class="portfolio__title">${project.subtitle}</h3>
                      <p class="portfolio__description">${project.subtitle}</p>
                      <a href="${project.projectDetailsUrl}?id=${project.id}&projectDetailsUrl=nullForNow"
                          class="button button--flex button--small portfolio_-button">
