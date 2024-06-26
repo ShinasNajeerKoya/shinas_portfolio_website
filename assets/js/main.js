@@ -53,7 +53,7 @@ const MAX_PROJECTS_HOMEPAGE = 3;
 
 // Function to load projects from JSON
 async function loadProjects() {
-    const response = await fetch('../assets/json/project_details.json');
+    const response = await fetch('assets/json/project_details.json');
     const data = await response.json();
     return data.projects;
 }
