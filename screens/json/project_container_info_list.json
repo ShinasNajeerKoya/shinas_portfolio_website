@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "image": "../assets/images/application_assets/1_mockup_thumbnail/pixa_vista_mockup.png",
+      "title": "PixaVista",
+      "description": "Application to get your High Quality wallpaper within a single click.",
+      "link": "screens/project_details.html"
+    },
+    {
+      "image": "../assets/images/application_assets/1_mockup_thumbnail/notetrove_mockup.png",
+      "title": "NoteTrove",
+      "description": "Application to get your High Quality wallpaper within a single click.",
+      "link": "screens/project_details.html"
+    },
+    {
+      "image": "../assets/images/application_assets/1_mockup_thumbnail/pixa_vista_mockup.png",
+      "title": "PixaVista",
+      "description": "Application to get your High Quality wallpaper within a single click.",
+      "link": "screens/project_details.html"
+    },
+    {
+      "image": "../assets/images/application_assets/1_mockup_thumbnail/pixa_vista_mockup.png",
+      "title": "PixaVista",
+      "description": "Application to get your High Quality wallpaper within a single click.",
+      "link": "screens/project_details.html"
+    },
+    {
+      "image": "../assets/images/application_assets/1_mockup_thumbnail/notetrove_mockup.png",
+      "title": "NoteTrove",
+      "description": "Application to get your High Quality wallpaper within a single click.",
+      "link": "screens/project_details.html"
+    },
+    {
+      "image": "../assets/images/application_assets/1_mockup_thumbnail/pixa_vista_mockup.png",
+      "title": "PixaVista",
+      "description": "Application to get your High Quality wallpaper within a single click.",
+      "link": "screens/project_details.html"
+    }
+  ]
+}

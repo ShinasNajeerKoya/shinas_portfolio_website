@@ -47,7 +47,47 @@ skillsHeader.forEach((el) => {
 })
 
 
-/*==================== project category  ====================*/
+/*==================== project category - project container list  ====================*/
+/*==================== for href of case study button - keep it as it is for (project.link), but in other pages, contactinate with (../)  ====================*/
+const MAX_PROJECTS_HOMEPAGE = 3;
+
+async function loadProjects() {
+    const response = await fetch('screens/json/project_container_info_list.json');
+    const data = await response.json();
+    return data.projects;
+}
+
+function displayProjects(projects, containerId, maxProjects = MAX_PROJECTS_HOMEPAGE) {
+    const container = document.getElementById(containerId);
+    container.innerHTML = '';
+
+    projects.slice(0, maxProjects).forEach(project => {
+        const projectElement = document.createElement('div');
+        projectElement.classList.add('portfolio__content', 'grid');
+
+        projectElement.innerHTML = `
+                    <img src="${project.image}" alt="${project.title}" class="portfolio__img">
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">${project.title}</h3>
+                        <p class="portfolio__description">${project.description}</p>
+                        <a href="${project.link}" class="button button--flex button--small portfolio_-button">
+                            Case Study
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                `;
+
+        container.appendChild(projectElement);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', async () => {
+    const projects = await loadProjects();
+    displayProjects(projects, 'portfolioContainer');
+});
+
+
+/*==================== project category - show all button  ====================*/
 // Initialize Swiper with manual navigation
 document.addEventListener("DOMContentLoaded", function() {
     // Find the Show All Projects button
@@ -62,6 +102,8 @@ document.addEventListener("DOMContentLoaded", function() {
         window.location.href = 'screens/all_projects.html';
     });
 });
+
+
 
 
 
@@ -133,3 +175,4 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
