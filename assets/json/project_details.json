@@ -80,34 +80,44 @@
         "Dribbble",
         "GIT",
         "Github",
+        "Lottie Animation",
         "Android Studio"
       ]
     },
     {
-      "id": "null",
-      "title": "Note Trive",
-      "subtitle": "Application to get your High Quality wallpaper within a single click.",
-      "subtitleTwoLines": "Application to get your High Quality wallpaper within a single click. Application to get your High Quality wallpaper within a single click.",
-      "productImage": "assets/images/application_assets/1_mockup_thumbnail/mockup_pixavista.png",
+      "id": "flamingo",
+      "title": "Flamingo.",
+      "subtitle": "Elevate Your Document Viewing Experience With A Single Gesture.",
+      "subtitleTwoLines": "Transform your document viewing experience with seamless gestures for efficiency and ease with Flamingo!",
+      "productImage": "assets/images/application_assets/1_mockup_thumbnail/flamingo_mockup.png",
       "projectDetailsUrl": "screens/project_details.html",
-      "projectGithubLink": "https://github.com/rammcodes/dopefolio",
-      "description": "PixaVista is an Open-Source project which is a simple and clean multi-page portfolio website template for developers. I created this project for developers to quickly build a good-looking and fast-performing multi-page portfolio without having to code their portfolio from scratch.",
+      "projectGithubLink": "https://github.com/ShinasNajeerKoya/Flamingo-YourPersonalDocumentReader",
+      "description": [
+        "Flamingo - Your Personal Document Reader is an innovative application designed to streamline access and viewing of PDF and Word documents directly from local storage. It stands out with its user-friendly interface and robust feature set, making document management effortless and efficient. Whether for casual reading or professional documentation, Flamingo supports a wide range of file formats, including .pdf and .doc/.docx, ensuring flexibility in handling various document types.",
+        "Ideal for individuals and professionals alike, Flamingo simplifies document management by offering intuitive tools for document access and navigation. Users can effortlessly open files by tapping the \"Open PDF File\" or \"Open Word File\" buttons and selecting documents stored on their device. This straightforward process ensures quick access to essential documents, enhancing productivity on the go.",
+        "The application's smooth page scrolling and dedicated navigation buttons facilitate easy transitions between pages, providing a seamless reading experience. It includes error handling mechanisms to guide users through any issues encountered during document selection, ensuring a smooth user experience. These features make Flamingo a valuable tool in educational, corporate, and personal settings, catering to diverse document management needs.",
+        "Flamingo welcomes community contributions and feedback, fostering continuous improvement and adaptation to user requirements. With its MIT License, the project promotes collaboration and ensures broad accessibility. Whether for enhancing productivity in professional workflows or simplifying document access in daily tasks, Flamingo offers a reliable solution for efficient document viewing and management."
+      ],
       "snapshots": [
-        "../assets/images/application_assets/iPhone 13 Max.png",
-        "../assets/images/application_assets/iPhone 13 Max.png",
-        "../assets/images/application_assets/iPhone 13 Max.png",
-        "../assets/images/application_assets/iPhone 13 Max.png",
-        "../assets/images/application_assets/iPhone 13 Max.png",
-        "../assets/images/application_assets/iPhone 13 Max.png"
+        "../assets/images/application_assets/flamingo/flamingo_onboarding_page.png",
+        "../assets/images/application_assets/flamingo/flamingo_homepage.png",
+        "../assets/images/application_assets/flamingo/flamingo_homepage_recent_2.png",
+        "../assets/images/application_assets/flamingo/flamingo_permission.png",
+        "../assets/images/application_assets/flamingo/flamingo_page_not_found.png",
+        "../assets/images/application_assets/flamingo/flamingo_homepage_recent_1.png",
+        "../assets/images/application_assets/flamingo/flamingo_pdf_selection.png",
+        "../assets/images/application_assets/flamingo/flamingo_pdf_view_1.png",
+        "../assets/images/application_assets/flamingo/flamingo_no_internet.png",
+        "../assets/images/application_assets/flamingo/flamingo_pdf_view_2.png"
       ],
       "skills": [
+        "Flutter",
         "Dart",
-        "flutter",
-        "firebase",
-        "jira",
+        "Figma",
+        "Dribbble",
         "GIT",
         "Github",
-        "bitbucket"
+        "Android Studio"
       ]
     },
     {
