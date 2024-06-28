@@ -121,30 +121,41 @@
       ]
     },
     {
-      "id": "note_trove",
-      "title": "NoteTrove",
-      "subtitle": "Application to get your High Quality wallpaper within a single click.",
-      "subtitleTwoLines": "Application to get your High Quality wallpaper within a single click. Application to get your High Quality wallpaper within a single click.",
-      "productImage": "assets/images/application_assets/1_mockup_thumbnail/notetrove_mockup.png",
+      "id": "savory_safari",
+      "title": "Savory Safari",
+      "subtitle": "Discover Culinary Delights with SavorySafari!..",
+      "subtitleTwoLines": "Dive Into the World of Culinary Delights with SavorySafari - Your Ultimate Recipe Companion!",
+      "productImage": "assets/images/application_assets/1_mockup_thumbnail/savorysafari_mockup.png",
       "projectDetailsUrl": "screens/project_details.html",
-      "projectGithubLink": "https://github.com/rammcodes/dopefolio",
-      "description": "PixaVista is an Open-Source project which is a simple and clean multi-page portfolio website template for developers. I created this project for developers to quickly build a good-looking and fast-performing multi-page portfolio without having to code their portfolio from scratch.",
+      "projectGithubLink": "https://github.com/ShinasNajeerKoya/SavorySafari_YourCulinaryAdventureBeginsHere",
+      "description": [
+        "SavorySafari is your essential culinary app, offering a wide array of recipes for all cooking levels. Discover dishes by ingredient, cuisine, or explore categories like Paneer, Grills, and Bread. Perfect for home cooks and chefs alike, it provides easy access to a global collection of recipes, bringing diverse flavors to your kitchen with ease.",
+        "Designed for food enthusiasts, SavorySafari helps home cooks, professionals, and health-conscious users find detailed nutritional information. Its user-friendly design simplifies searching, browsing, and bookmarking. Each recipe includes ingredient lists, step-by-step instructions, and calorie counts, presented in an engaging and visually appealing format that enhances your cooking experience.",
+        "SavorySafari surpasses traditional recipe books with up-to-date content and detailed nutritional insights. Its dynamic search function and real-time updates ensure a constantly refreshed culinary experience. Whether for daily meals or new experiments, SavorySafari makes cooking enjoyable and accessible, providing inspiration and convenience at your fingertips.",
+        "Embrace the future of culinary exploration with SavorySafari, where every recipe is a journey and every meal a celebration of flavors. Its intuitive interface is perfect for meal planning, special occasions, or exploring new flavors. With SavorySafari, you have a world of culinary delight at your fingertips, transforming your cooking into an adventure."
+      ],
       "snapshots": [
-        "../assets/images/application_assets/iPhone 13 Max.png",
-        "../assets/images/application_assets/iPhone 13 Max.png",
-        "../assets/images/application_assets/iPhone 13 Max.png",
-        "../assets/images/application_assets/iPhone 13 Max.png",
-        "../assets/images/application_assets/iPhone 13 Max.png",
-        "../assets/images/application_assets/iPhone 13 Max.png"
+        "../assets/images/application_assets/savory_safari/savory_safari_details_ingredients.png",
+        "../assets/images/application_assets/savory_safari/savory_safari_details_steps.png",
+        "../assets/images/application_assets/savory_safari/savory_safari_home_page.png",
+        "../assets/images/application_assets/savory_safari/savory_safari_homepage2.png",
+        "../assets/images/application_assets/savory_safari/savory_safari_homepage3.png",
+        "../assets/images/application_assets/savory_safari/savory_safari_loading_homepage.png",
+        "../assets/images/application_assets/savory_safari/savory_safari_no_results.png",
+        "../assets/images/application_assets/savory_safari/savory_safari_onboarding_page.png",
+        "../assets/images/application_assets/savory_safari/savory_safari_search_french.png",
+        "../assets/images/application_assets/savory_safari/savory_safari_search_indian.png",
+        "../assets/images/application_assets/savory_safari/savory_safari_search_page.png",
+        "../assets/images/application_assets/savory_safari/savory_safari_webview2.png",
+        "../assets/images/application_assets/savory_safari/savory_safari_webview3.png",
+        "../assets/images/application_assets/savory_safari/savory_safari_webview_page.png"
       ],
       "skills": [
         "Dart",
         "flutter",
-        "firebase",
-        "jira",
+        "Postman API",
         "GIT",
-        "Github",
-        "bitbucket"
+        "Github"
       ]
     },
     {
