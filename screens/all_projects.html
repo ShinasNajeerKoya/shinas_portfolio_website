@@ -1,91 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="I'm Shinas, and this is my personal portfolio website.">
-    <meta name="keywords" content="Shinas, Shinas Koya, shinaskoya">
-
-    <!--==================== UNICONS ====================-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Shinas Koya</title>
+    <meta name="description" content="Portfolio Template for Developer"/>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
 
-    <!--==================== CSS ====================-->
-    <link rel="stylesheet" href="../screens/css/all_projects.css"/>
 
-    <title>Shinas Koya</title>
+    <link rel="stylesheet" href="../assets/css/style.css"/>
 
-    <!--==================== Favicon ====================-->
-    <link rel="shortcut icon" href="../assets/images/logo_assets/shinas_koya_portfolio_logo.png"
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+          rel="stylesheet"/>
+    <link rel="shortcut icon" href="/assets/images/logo_assets/shinas_koya_portfolio_logo.png"
           type="image/png">
-
-    <!--==================== Animate on scroll CDN ====================-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-
 </head>
-
 <body>
-
-<!--==================== HEADER ====================-->
-<header class="header" id="header">
-    <nav class="nav container">
-        <a href="#" class="nav__logo" id="backButton">Shinas Koya</a>
-    </nav>
+<header class="header">
+    <div class="header__content">
+        <div class="header__logo-container">
+            <div class="header__logo-img-cont">
+                <img
+                        src="../assets/images/profile_assets/shinas_profile_picture.jpeg"
+                        alt="Shinas Koya Logo Image"
+                        class="header__logo-img"
+                />
+            </div>
+            <span class="header__logo-sub">Shinas Koya</span>
+        </div>
+    </div>
 </header>
 
-<main class="main">
-    <!--==================== PROJECTS ====================-->
-    <section class="portfolio section" id="projects">
-        <h2 class="section__title">All Projects</h2>
-        <span class="section__subtitle">All of my work</span>
+<!--main section-->
 
-        <div class="portfolio__container container" id="portfolioContainer">
-            <!-- All projects will be dynamically inserted here -->
+
+<!--project section-->
+
+<section id="projects" class="projects sec-pad">
+    <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+            <span class="heading-sec__main">Projects</span>
+            <span class="heading-sec__sub">
+                Here you will find some of my projects that I created with each project containing its own case study.
+            </span>
+        </h2>
+
+        <div class="projects__content" id="portfolioContainer">
+            <!-- Projects will be dynamically inserted here -->
         </div>
 
-    </section>
-</main>
+        <div class="show-all-projects">
+            <a href="" class="btn  btn--theme-inv--contact project-details__links-btn"
+               id="backButton">
+                <i class="uil uil-arrow-left button__icon"></i>
+                Go Back
 
-<!--==================== FOOTER ====================-->
-<footer class="footer">
-    <div class="footer__bg">
-        <div class="footer__container">
-            <div class="footer__title-container">
-                <h1 class="footer__title">Shinas Najeer Koya</h1>
-                <span class="footer__subtitle">Flutter Developer</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!--contact section-->
+
+
+<footer class="main-footer">
+    <div class="main-container">
+        <div class="main-footer__upper">
+            <div class="main-footer__row main-footer__row-1">
+                <h2 class="heading heading-sm main-footer__heading-sm">
+                    <span>Social</span>
+                </h2>
+                <div class="main-footer__social-cont">
+                    <a target="_blank" rel="noreferrer"
+                       href="https://www.linkedin.com/in/shinasnajeerkoya/">
+                        <img
+                                class="main-footer__icon"
+                                src="../assets/images/social_assets/linkedin_white.png"
+                                alt="linkedin"
+                        />
+                    </a>
+                    <a target="_blank" rel="noreferrer" href="https://github.com/ShinasNajeerKoya">
+                        <img
+                                class="main-footer__icon"
+                                src="../assets/images/social_assets/github_white.png"
+                                alt="github"
+                        />
+                    </a>
+                    <a target="_blank" rel="noreferrer" href="mailto:shinasnajeerkoya@gmail.com">
+                        <img
+                                class="main-footer__icon" style="width: 3.3rem;"
+                                src="../assets/images/social_assets/gmail_white.png"
+                                alt="gmail"
+                        />
+                    </a>
+                </div>
             </div>
-
-            <div class="footer__social">
-                <a href="https://www.linkedin.com/in/shinasnajeerkoya/" target="_blank"
-                   class="footer__social__button">
-                    <img width="27" height="27" src="../assets/images/skills_assets/linkedin.svg"
-                         alt="linkedin"/>
-                </a>
-
-                <a href="https://github.com/ShinasNajeerKoya" target="_blank"
-                   class="footer__social__button">
-                    <img width="25" height="25"
-                         src="../assets/images/skills_assets/github_outline.svg"
-                         alt="github"/>
-                </a>
-                <a href="mailto:shinasnajeerkoya@gmail.com" target="_blank"
-                   class="footer__social__button">
-                    <img width="22" height="22"
-                         src="https://img.icons8.com/ios/100/ededed/gmail-new.png" alt="gmail"/>
-                </a>
+            <div class="main-footer__row main-footer__row-2">
+                <h4 class="heading heading-sm text-lt">Shinas Koya</h4>
+                <p class="main-footer__short-desc">
+                    Flutter Developer
+                </p>
             </div>
         </div>
-        <p class="footer__copy">&copy; 2024 Shinas Koya | All Rights Reserved</p>
+
+        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+        <div class="main-footer__lower">
+            &copy; Copyright 2024. Made by
+            <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/shinasnajeerkoya/"
+            >Shinas Koya</a
+            >
+        </div>
     </div>
 </footer>
 
-<!--==================== SCROLL TOP ====================-->
-<div><a href="#" class="scrollup" id="scroll-up">
-    <i class="uil uil-arrow-up scrollup__icon"></i>
-</a></div>
-
-<!--==================== JAVASCRIPT ====================-->
 <script src="../screens/js/all_projects.js"></script>
-
 </body>
 </html>

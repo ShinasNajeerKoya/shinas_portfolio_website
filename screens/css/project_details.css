@@ -685,12 +685,12 @@ textarea {
     font-size: 1.8rem;
     line-height: 1.7;
     color: #666;
-    margin-bottom: 2rem
+    margin-bottom: 2rem;
 }
 
 .project-details__snapshot-used {
     margin: 0 0 7rem 0
-}.
+}
 
 project-details__tools-used {
     margin: 0 0 7rem 0

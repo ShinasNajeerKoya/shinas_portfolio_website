@@ -19,11 +19,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         document.getElementById('project-title').textContent = project.title;
         document.getElementById('project-subtitleTwoLines').textContent = project.subtitleTwoLines;
         document.getElementById('project-image').src = `../${project.productImage}`;
-        //        document.getElementById('project-description').textContent = project.description;
-
-
-
-        //
         document.getElementById('project-github-linkTop').href = project.projectGithubLink;
         document.getElementById('project-github-linkBottom').href = project.projectGithubLink;
 
@@ -94,15 +89,16 @@ document.addEventListener("DOMContentLoaded", function() {
     const backButton = document.getElementById("backButtonBottom");
     backButton.addEventListener("click", function(event) {
         event.preventDefault();
-        window.history.back();
+        window.location.href = "../index.html"; // Replace with your actual index page URL
     });
 });
+
 
 document.addEventListener("DOMContentLoaded", function() {
     const backButton = document.getElementById("backButtonTop");
     backButton.addEventListener("click", function(event) {
         event.preventDefault();
-        window.history.back();
+        window.location.href = "../index.html";
     });
 });
 

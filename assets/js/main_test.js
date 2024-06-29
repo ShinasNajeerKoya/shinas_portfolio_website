@@ -76,7 +76,7 @@ function displayProjects(projects, containerId, maxProjects = MAX_PROJECTS_HOMEP
         <p class="projects__row-content-desc">${project.subtitle}</p>
         <a href="${project.projectDetailsUrl}?id=${project.id}&projectDetailsUrl=nullForNow"
             class="btn btn--med btn--theme dynamicBgClr"
-            target="_blank">Case Study</a>
+            >Case Study</a>
       </div>
     `;
 
