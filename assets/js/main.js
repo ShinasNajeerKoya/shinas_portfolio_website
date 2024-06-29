@@ -65,20 +65,20 @@ function displayProjects(projects, containerId, maxProjects = MAX_PROJECTS_HOMEP
 
     projects.slice(0, maxProjects).forEach(project => {
         const projectElement = document.createElement('div');
-        projectElement.classList.add('portfolio__content', 'grid');
+        projectElement.classList.add('projects__row'); // Match your HTML class
 
         projectElement.innerHTML = `
-            <img src="${project.productImage}" alt="${project.id}" class="portfolio__img">
-                <div class="portfolio__data">
-                  <h3 class="portfolio__title">${project.title}</h3>
-                     <p class="portfolio__description">${project.subtitle}</p>
-                     <a href="${project.projectDetailsUrl}?id=${project.id}&projectDetailsUrl=nullForNow"
-                         class="button button--flex button--small portfolio_-button">
-                         Case Study
-                         <i class="uil uil-arrow-right button__icon"></i>
-                     </a>
-                </div>
-        `;
+      <div class="projects__row-img-cont">
+        <img src="${project.productImage}" alt="${project.id}" class="projects__row-img">
+      </div>
+      <div class="projects__row-content">
+        <h3 class="projects__row-content-title">${project.title}</h3>
+        <p class="projects__row-content-desc">${project.subtitle}</p>
+        <a href="${project.projectDetailsUrl}?id=${project.id}&projectDetailsUrl=nullForNow"
+            class="btn btn--med btn--theme dynamicBgClr"
+            target="_blank">Case Study</a>
+      </div>
+    `;
 
         container.appendChild(projectElement);
     });
@@ -87,8 +87,9 @@ function displayProjects(projects, containerId, maxProjects = MAX_PROJECTS_HOMEP
 // Main logic to load and display projects
 document.addEventListener('DOMContentLoaded', async () => {
     const projects = await loadProjects();
-    displayProjects(projects, 'portfolioContainer');
+    displayProjects(projects, 'projects'); // Match your HTML container ID
 });
+
 
 
 
