@@ -1,548 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="I'm Shinas,and this is my personal portfolio website..">
-    <meta name="keywords" content="Shinas, Shinas Koya, shinaskoya ">
-
-    <!--==================== UNICONS ====================-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Shinas Koya</title>
+    <meta name="description" content="Portfolio Template for Developer"/>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
 
-    <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css"/>
 
-    <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/style.css"/>
 
-    <title>Shinas Koya</title>
-
-    <!--==================== Favicon ====================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+          rel="stylesheet"/>
     <link rel="shortcut icon" href="/assets/images/logo_assets/shinas_koya_portfolio_logo.png"
           type="image/png">
-
-    <!--==================== Animate on scroll CDN ====================-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-
 </head>
-
 <body>
-
-<!--==================== HEADER ====================-->
-<header class="header" id="header">
-    <nav class="nav container">
-        <a href="#" class="nav__logo">Shinas Koya</a>
-
-        <div data-aos="fade-in" class="nav__menu" id="nav-menu">
-            <ul class="nav__list grid">
-                <li class="nav__items">
-                    <a href="#home" class="nav__link active-link">
-                        <i class="uil uil-estate nav__icon"></i> Home
+<header class="header">
+    <div class="header__content">
+        <div class="header__logo-container">
+            <div class="header__logo-img-cont">
+                <img
+                        src="./assets/images/profile_assets/shinas_profile_picture.jpeg"
+                        alt="Shinas Koya Logo Image"
+                        class="header__logo-img"
+                />
+            </div>
+            <span class="header__logo-sub">Shinas Koya</span>
+        </div>
+        <div class="header__main">
+            <ul class="header__links">
+                <li class="header__link-wrapper">
+                    <a href="./index.html" class="header__link"> Home </a>
+                </li>
+                <li class="header__link-wrapper">
+                    <a href="./index.html#about" class="header__link">About </a>
+                </li>
+                <li class="header__link-wrapper">
+                    <a href="./index.html#projects" class="header__link">
+                        Projects
                     </a>
                 </li>
-
-                <li class="nav__items">
-                    <a href="#about" class="nav__link ">
-                        <i class="uil uil-user nav__icon"></i> About
-                    </a>
-                </li>
-
-                <li class="nav_items">
-                    <a href="#skills" class="nav__link ">
-                        <i class="uil uil-file nav__icon"></i> Skills
-                    </a>
-                </li>
-
-                <li class="nav__items">
-                    <a href="#projects" class="nav__link ">
-                        <i class="uil uil-scenery nav__icon"></i> Projects
-                    </a>
-                </li>
-
-                <li class="nav__items">
-                    <a href="#contact" class="nav__link ">
-                        <i class="uil uil-message nav__icon"></i> Contact me
-                    </a>
+                <li class="header__link-wrapper">
+                    <a href="./index.html#contact" class="header__link"> Contact </a>
                 </li>
             </ul>
-            <i class="uil uil-times nav__close" id="nav-close"></i>
-        </div>
-
-        <div class="nav__btns">
-            <!--Theme Change button-->
-            <i class="uil uil-moon change-theme" id="theme-button"></i>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="uil uil-apps"></i>
+            <div class="header__main-ham-menu-cont">
+                <img
+                        src="./assets/images/logo_assets/component_svg/ham-menu.svg"
+                        alt="hamburger menu"
+                        class="header__main-ham-menu"
+                />
+                <img
+                        src="./assets/images/logo_assets/component_svg/ham-menu-close.svg"
+                        alt="hamburger menu close"
+                        class="header__main-ham-menu-close d-none"
+                />
             </div>
         </div>
+    </div>
+    <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+            <ul class="header__sm-menu-links">
+                <li class="header__sm-menu-link">
+                    <a href="./index.html"> Home </a>
+                </li>
 
-    </nav>
+                <li class="header__sm-menu-link">
+                    <a href="./index.html#about"> About </a>
+                </li>
+
+                <li class="header__sm-menu-link">
+                    <a href="./index.html#projects"> Projects </a>
+                </li>
+
+                <li class="header__sm-menu-link">
+                    <a href="./index.html#contact"> Contact </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </header>
 
-<!--==================== MAIN ====================-->
-<main class="main">
+<!--main section-->
+<section class="home-hero">
+    <div class="home-hero__content">
+        <h1 class="heading-primary">Hey, I'm Shinas Koya</h1>
+        <div class="home-hero__info">
+            <p class="text-primary">
+                Welcome to my portfolio. Explore my projects and discover my passion for innovation.
+                Feel free to reach out for any questions or collaborations.
+            </p>
+        </div>
+        <div class="home-hero__cta">
+            <a href="./index.html#projects" class="btn btn--bg">Projects</a>
+        </div>
+    </div>
+    <div class="home-hero__socials">
+        <div class="home-hero__social">
+            <a href="https://www.linkedin.com/in/shinasnajeerkoya/"
+               class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
+                <img src="https://img.icons8.com/fluency/48/linkedin.png"
+                     alt="Shinas Koya Linkedin Profile" class="home-hero__social-icon">
+            </a>
+        </div>
 
-    <section class="home section" id="home">
-        <div data-aos="fade-left" class="home__container container grid">
-            <div class="home__content grid">
 
-                <!-- home left side contact section ends-->
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/shinasnajeerkoya/"
-                       target="_blank" class="home__social-icon">
-                        <img width="29" height="29"
-                             src="https://img.icons8.com/fluency/48/linkedin.png" alt="linkedin"/>
-                    </a>
-                    <a href="https://github.com/ShinasNajeerKoya" target="_blank"
-                       class="home__social-icon">
-                        <img width="27" height="27"
-                             src="https://img.icons8.com/fluency-systems-filled/48/github.png"
-                             alt="github"/>
-                    </a>
-                    <a href="mailto:shinasnajeerkoya@gmail.com" target="_blank"
-                       class="home__social-icon">
-                        <img width="24" height="24"
-                             src="https://img.icons8.com/fluency/48/gmail-new.png" alt="gmail-new"/>
-                    </a>
+        <div class="home-hero__social">
+            <a href="https://github.com/ShinasNajeerKoya" class="home-hero__social-icon-link"
+               rel="noreferrer" target="_blank">
+                <img src="https://img.icons8.com/fluency-systems-filled/48/github.png"
+                     alt="Shinas Koya Github Profile"
+                     class="home-hero__social-icon">
+            </a>
+        </div>
 
-                </div>
-                <!-- home left side contact section ends -->
+        <div class="home-hero__social">
+            <a href="mailto:shinasnajeerkoya@gmail.com" class="home-hero__social-icon-link"
+               rel="noreferrer"
+               target="_blank">
+                <img src="https://img.icons8.com/fluency/48/gmail-new.png" alt="Shinas Koya Gmail"
+                     class="home-hero__social-icon">
+            </a>
+        </div>
+    </div>
 
-                <!-- image starts-->
-                <div data-aos="fade-right" class="home__img">
-                    <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
-            130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775
-            97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666
-            0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
-            165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
-            129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
-            -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                                  fill="none"/>
-                            <image class="home__blob-img" x="15" y="-10" width="220" height="207"
-                                   href="assets/images/profile_assets/shinas_profile_picture.jpeg"/>
-                        </g>
-                    </svg>
-                </div>
-
-                <!-- home body -->
-                <div class="home__data">
-                    <h1 class="home_title">Hi!<span class="wave">👋</span>, I'm Shinas Koya</h1>
-                    <h3 class="home__subtitle">
-                        and I'm <span class="auto-input"></span>
-                    </h3>
-                    <p class="home__description">
-                        Skilled Android developer specializing in Flutter, Dart, and Firebase,
-                        focused on delivering exceptional user experiences.
+    <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+    </div>
+</section>
+<section id="about" class="about sec-pad">
+    <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+            <span class="heading-sec__main">About Me</span>
+            <span class="heading-sec__sub">
+            I’m a skilled software developer with over 2 years of experience in Flutter, Dart, and
+                Firebase. I excel in test-driven development and API integration, focusing on performance and user experience.
+          </span>
+        </h2>
+        <div class="about__content">
+            <div class="about__content-main">
+                <h3 class="about__content-title">Get to know me!</h3>
+                <div class="about__content-details">
+                    <p class="about__content-details-para">
+                        Hello! I'm <strong>Shinas Koya,</strong> a software developer passionate
+                        about building user-centric applications. Leveraging my expertise in
+                        <strong>Flutter, Dart and Firebase.</strong> I bring a comprehensive skill
+                        set to the table, including writing clean, testable code, seamless API
+                        integration, and CI/CD pipelines for efficient deployment. My foundation in
+                        Agile methodologies ensures a collaborative environment, while version
+                        control with Git and code review practices guarantee code quality. I
+                        prioritize user experience through responsive design, database management,
+                        and a keen eye for UI/UX best practices. Additionally, I champion security
+                        best practices and user authentication, and I craft engaging experiences
+                        with Figma for animated icons and illustrations.
                     </p>
-                    <a href="#contact" class="button button--flex">
-                        Contact Me <i class="uil uil-message button__icon"></i>
-                    </a>
+                    <p class="about__content-details-para">
+                        As a collaborative team player, I am committed to delivering high-quality
+                        software solutions from concept to deployment. I take pride in creating
+                        intuitive applications that enhance user satisfaction and streamline
+                        processes. Feel free to contact me here to discuss how we can work together
+                        to achieve your software development goals.
+                        <strong>contact</strong> me here.
+                    </p>
                 </div>
+                <a href="./index.html#contact"
+                   class="btn  btn--theme-inv--contact project-details__links-btn"
+                   rel="noopener noreferrer"
+                >Contact</a>
+                <a download="" href="assets/pdf/flutter_developer_shinas_najeer_koya.pdf"
+                   class="btn btn--med__download-CV btn--theme project-download-CV__links-btn"
+                   target="_blank" rel="noopener noreferrer">Download CV <i
+                        class="uil uil-download-alt button__icon"></i></a>
+
             </div>
-            <br>
 
-        </div>
-    </section>
-
-    <!--==================== ABOUT ====================-->
-    <section class="about section" id="about">
-        <h2 class="section__title">About Me</h2>
-        <span class="section__subtitle"> My Introduction</span>
-
-        <div data-aos="fade-left" class="about__container container grid">
-            <img src="assets/images/profile_assets/shinas_profile_picture_2.jpeg" alt=""
-                 class="about__img"/>
-
-            <div class="about__data">
-                <p class="about__description">
-                    Specializing in Flutter, Dart, Firebase, Git, Jira, Figma and agile
-                    methodologies.
-                    Expertise in test-driven development, API integration, and optimizing
-                    performance
-                    with a focus on robust security measures. <br> <br>
-
-                    Collaborative team player committed to delivering high-quality software from
-                    concept to deployment.
-                </p>
-
-                <div class="about_info">
-                    <div>
-                        <span class="about__info-title">02+</span>
-                        <span class="about__info-name">Years <br/>
-                                experience</span>
-                    </div>
-                    <div>
-                        <span class="about__info-title">10+</span>
-                        <span class="about__info-name">Completed <br/>
-                                project</span>
-                    </div>
-
+            <!--            skill section-->
+            <div class="about__content-skills">
+                <h3 class="about__content-title">My Skills</h3>
+                <h5 class="about__content-subtitle" style="font-size: 2em;color: #595959">
+                    Frontend</h5>
+                <p class="experience-text">More than 2 years</p>
+                <div class="skills">
+                    <div class="skills__skill">Flutter</div>
+                    <div class="skills__skill">Dart</div>
+                    <div class="skills__skill">Figma</div>
+                    <div class="skills__skill">JavaScript</div>
+                    <div class="skills__skill">HTML</div>
+                    <div class="skills__skill">CSS</div>
+                    <div class="skills__skill">Android Studio</div>
+                    <div class="skills__skill">Android</div>
+                    <div class="skills__skill">iOS</div>
+                    <div class="skills__skill">Visual Studio Code</div>
                 </div>
-
-                <div class="about__buttons">
-                    <a download="" href="assets/pdf/flutter_developer_shinas_najeer_koya.pdf"
-                       class="button button--flex">
-                        Download CV <i class="uil uil-download-alt button__icon"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--==================== SKILLS ====================-->
-    <section class="skills section" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <span class="section__subtitle">My technical level</span>
-
-        <div data-aos="fade-up" class="skills__container container">
-            <div>
-                <!--==================== SKILL 1 ====================-->
-                <div class="skills__content skills__open">
-                    <div class="skills__header">
-                        <i class="uil uil-brackets-curly skills__icon"></i>
-
-                        <div>
-                            <h1 class="skills__title">Frontend developer</h1>
-                            <span class="skills__subtitle">More then 2 years</span>
-                        </div>
-
-                        <i class="uil uil-angle-down skills__arrow"></i>
-                    </div>
-
-                    <div class="skills__list grid">
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name"><img
-                                        src="https://upload.wikimedia.org/wikipedia/commons/9/91/Dart-logo-icon.svg"
-                                        class="skills__logo"
-                                        width="23px" alt="Dart"> Dart</h3>
-                            </div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name"><img
-                                        src="https://img.icons8.com/color/48/flutter.png"
-                                        class="skills__logo"
-                                        width="25px" alt="Flutter"> Flutter</h3>
-                            </div>
-                        </div>
-
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name"><img
-                                        src="https://img.icons8.com/fluency/48/figma.png"
-                                        class="skills__logo"
-                                        width="25px" alt="Figma"> Figma</h3>
-
-                            </div>
-                        </div>
-
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name"><img
-                                        src="https://img.icons8.com/fluency/48/android-studio--v3.png"
-                                        class="skills__logo"
-                                        width="25px" alt="Android Studio"> Android Studio</h3>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name"><img
-                                        src="https://img.icons8.com/color/48/html-5--v1.png"
-                                        class="skills__logo"
-                                        width="28px" alt="HTML"> HTML</h3>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name"><img
-                                        src="https://img.icons8.com/color/48/css3.png"
-                                        class="skills__logo"
-                                        width="27px" alt="CSS"> CSS</h3>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name"><img
-                                        src="https://img.icons8.com/fluency/48/javascript.png"
-                                        class="skills__logo"
-                                        width="28px" alt="Javascript"> Javascript</h3>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name"><img
-                                        src="https://img.icons8.com/color/48/visual-studio-code-2019.png"
-                                        class="skills__logo"
-                                        width="25px" alt="Visual Studio Code"> Visual Studio Code
-                                </h3>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-
-                <!--==================== SKILL 2 ====================-->
-                <div class="skills__content skills__close">
-                    <div class="skills__header">
-                        <i class="uil uil-server-network skills__icon"></i>
-
-                        <div>
-                            <h1 class="skills__title">Backend developer</h1>
-                            <span class="skills__subtitle">More then 1 years</span>
-                        </div>
-
-                        <i class="uil uil-angle-down skills__arrow"></i>
-                    </div>
-
-                    <div class="skills__list grid">
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name"><img
-                                        src="https://img.icons8.com/color/48/firebase.png"
-                                        class="skills__logo"
-                                        width="27px" alt="Firebase"> Firebase</h3>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name"><img
-                                        src="https://img.icons8.com/color/48/git.png"
-                                        class="skills__logo"
-                                        width="30px" alt="Git"> Git</h3>
-                            </div>
-                        </div>
-
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name"><img
-                                        src="assets/images/skills_assets/postman.svg"
-                                        class="skills__logo"
-                                        width="22px" alt="Postman Api"> Postman Api</h3>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name"><img
-                                        src="https://img.icons8.com/fluency/48/supabase.png"
-                                        class="skills__logo"
-                                        width="25px" alt="Supabase"> Supabase</h3>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name"><img
-                                        src="https://img.icons8.com/color/48/jira.png"
-                                        class="skills__logo"
-                                        width="25px" alt="Jira"> Jira</h3>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name"><img
-                                        src="assets/images/skills_assets/bitbucket.svg"
-                                        class="skills__logo"
-                                        width="22px" alt="BitBucket"> BitBucket</h3>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name"><img
-                                        src="https://img.icons8.com/fluency/48/node-js.png"
-                                        class="skills__logo"
-                                        width="25px" alt="Node.js"> Node.js</h3>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name"><img
-                                        src="https://img.icons8.com/color/48/python--v1.png"
-                                        class="skills__logo"
-                                        width="25px" alt="Python"> Python</h3>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name"><img
-                                        src="https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png"
-                                        class="skills__logo"
-                                        width="25px" alt="Java"> Java</h3>
-                            </div>
-                        </div>
-
-
-                    </div>
+                <br>
+                <h5 class="about__content-subtitle" style="font-size: 2em; color: #595959">
+                    Backend</h5>
+                <p class="experience-text">More than 1 year</p>
+                <div class="skills">
+                    <div class="skills__skill">Firebase</div>
+                    <div class="skills__skill">Git</div>
+                    <div class="skills__skill">Postman API</div>
+                    <div class="skills__skill">Jira</div>
+                    <div class="skills__skill">Supabase</div>
+                    <div class="skills__skill">Node.js</div>
+                    <div class="skills__skill">BitBucket</div>
+                    <div class="skills__skill">Python</div>
+                    <div class="skills__skill">GitHub</div>
+                    <div class="skills__skill">Java</div>
+                    <div class="skills__skill">API Integration</div>
                 </div>
             </div>
         </div>
+    </div>
+
+</section>
 
 
-    </section>
+<!--project section-->
 
+<section id="projects" class="projects sec-pad">
+    <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+            <span class="heading-sec__main">Projects</span>
+            <span class="heading-sec__sub">
+                Here you will find some of my projects that I created with each project containing its own case study.
+            </span>
+        </h2>
 
-    <!--==================== PROJECTS ====================-->
-
-    <section class="portfolio section" id="projects">
-        <h2 class="section__title">Projects</h2>
-        <span class="section__subtitle">Most recent work</span>
-
-        <div class="portfolio__container container" id="portfolioContainer">
-            <!-- Project content will be dynamically inserted here -->
+        <div class="projects__content" id="portfolioContainer">
+            <!-- Projects will be dynamically inserted here -->
         </div>
 
-        <!-- Navigation Buttons -->
         <div class="show-all-projects">
-            <a href="screens/all_projects.html" class="button button--flex button--large">
+            <a href="screens/all_projects.html" class="btn btn--med btn--theme dynamicBgClr">
                 Show All Projects
                 <i class="uil uil-arrow-right button__icon"></i>
             </a>
         </div>
-    </section>
+    </div>
+</section>
 
-
-    <!--==================== CONTACT ME ====================-->
-    <section class="contact section" id="contact">
-        <h2 class="section__title">Contact Me</h2>
-        <span class="section__subtitle">Get in touch</span>
-
-        <div data-aos="fade-in" class="contact__container container grid">
-            <div>
-                <div class="contact__information">
-                    <a href="https://www.linkedin.com/in/shinasnajeerkoya/" target="_blank"
-                       class="contact__link">
-                        <img width="60" height="60"
-                             src="https://img.icons8.com/fluency/240/linkedin.png" alt="linkedin"/>
-                        <div class="contact__details">
-                            <h3 class="contact__title">LinkedIn</h3>
-                            <span class="contact__subtitle">https://www.linkedin.com/in/shinasnajeerkoya/</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="contact__information">
-                    <a href="https://github.com/ShinasNajeerKoya" target="_blank"
-                       class="contact__link">
-                        <img width="60" height="60"
-                             src="https://img.icons8.com/glyph-neue/64/github.png" alt="github"/>
-                        <div class="contact__details">
-                            <h3 class="contact__title">Github</h3>
-                            <span class="contact__subtitle">https://github.com/ShinasNajeerKoya</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="contact__information">
-                    <a href="mailto:shinasnajeerkoya@gmail.com" target="_blank"
-                       class="contact__link">
-                        <img width="60" height="60"
-                             src="https://img.icons8.com/color/480/gmail-new.png" alt="gmail"/>
-                        <div class="contact__details">
-                            <h3 class="contact__title">Gmail</h3>
-                            <span class="contact__subtitle">shinasnajeerkoya@gmail.com</span>
-                        </div>
-                    </a>
-                </div>
+<!--contact section-->
+<section id="contact" class="contact sec-pad dynamicBg">
+    <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+            <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+            <span class="heading-sec__sub heading-sec__sub--lt">
+               Feel free to contact me if you have any questions, and I will get back to you as soon as possible.
+            </span>
+        </h2>
+        <div class="contact__form-container">
+            <div class="contact__information">
+                <a href="https://www.linkedin.com/in/shinasnajeerkoya/" target="_blank"
+                   class="contact__link">
+                    <img width="60" height="60"
+                         src="https://img.icons8.com/fluency/240/linkedin.png" alt="linkedin"/>
+                    <div class="contact__details">
+                        <h3 class="contact__title">LinkedIn</h3>
+                        <span class="contact__subtitle">https://www.linkedin.com/in/shinasnajeerkoya/</span>
+                    </div>
+                </a>
+            </div>
+            <div class="contact__information">
+                <a href="https://github.com/ShinasNajeerKoya" target="_blank" class="contact__link">
+                    <img width="60" height="60"
+                         src="https://img.icons8.com/glyph-neue/64/github.png" alt="github"/>
+                    <div class="contact__details">
+                        <h3 class="contact__title">GitHub</h3>
+                        <span class="contact__subtitle">https://github.com/ShinasNajeerKoya</span>
+                    </div>
+                </a>
+            </div>
+            <div class="contact__information">
+                <a href="mailto:shinasnajeerkoya@gmail.com" target="_blank" class="contact__link">
+                    <img width="60" height="60" src="https://img.icons8.com/color/480/gmail-new.png"
+                         alt="gmail"/>
+                    <div class="contact__details">
+                        <h3 class="contact__title">Gmail</h3>
+                        <span class="contact__subtitle">shinasnajeerkoya@gmail.com</span>
+                    </div>
+                </a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 
-</main>
-
-<!--==================== FOOTER ====================-->
-<footer class="footer">
-    <div class="footer__bg">
-        <div class="footer__container">
-            <div class="footer__title-container">
-                <h1 class="footer__title">Shinas Najeer Koya</h1>
-                <span class="footer__subtitle">Flutter Developer</span>
+<footer class="main-footer">
+    <div class="main-container">
+        <div class="main-footer__upper">
+            <div class="main-footer__row main-footer__row-1">
+                <h2 class="heading heading-sm main-footer__heading-sm">
+                    <span>Social</span>
+                </h2>
+                <div class="main-footer__social-cont">
+                    <a target="_blank" rel="noreferrer"
+                       href="https://www.linkedin.com/in/shinasnajeerkoya/">
+                        <img
+                                class="main-footer__icon"
+                                src="./assets/images/social_assets/linkedin_white.png"
+                                alt="linkedin"
+                        />
+                    </a>
+                    <a target="_blank" rel="noreferrer" href="https://github.com/ShinasNajeerKoya">
+                        <img
+                                class="main-footer__icon"
+                                src="./assets/images/social_assets/github_white.png"
+                                alt="github"
+                        />
+                    </a>
+                    <a target="_blank" rel="noreferrer" href="mailto:shinasnajeerkoya@gmail.com">
+                        <img
+                                class="main-footer__icon" style="width: 3.3rem;"
+                                src="./assets/images/social_assets/gmail_white.png"
+                                alt="gmail"
+                        />
+                    </a>
+                </div>
             </div>
-
-            <ul class="footer__links">
-                <li>
-                    <a href="#skills" class="footer__link">Skills</a>
-                </li>
-                <li>
-                    <a href="#projects" class="footer__link">Projects</a>
-                </li>
-                <li>
-                    <a href="#contact" class="footer__link">Contact me</a>
-                </li>
-            </ul>
-
-            <div class="footer__social">
-                <a href="https://www.linkedin.com/in/shinasnajeerkoya/"
-                   target="_blank" class="footer__social__button">
-                    <img width="27" height="27"
-                         src="assets/images/skills_assets/linkedin.svg"
-                         alt="linkedin"/>
-                </a>
-
-                <a href="https://github.com/ShinasNajeerKoya"
-                   target="_blank" class="footer__social__button">
-                    <img width="25" height="25"
-                         src="assets/images/skills_assets/github_outline.svg"
-                         alt="github"/>
-                </a>
-                <a href="mailto:shinasnajeerkoya@gmail.com"
-                   target="_blank" class="footer__social__button">
-                    <img width="22" height="22"
-                         src="https://img.icons8.com/ios/100/ededed/gmail-new.png" alt="gmail"/>
-                </a>
-
+            <div class="main-footer__row main-footer__row-2">
+                <h4 class="heading heading-sm text-lt">Shinas Koya</h4>
+                <p class="main-footer__short-desc">
+                    Flutter Developer
+                </p>
             </div>
         </div>
-        <p class="footer__copy">&copy; 2024 Shinas Koya | All Rights Reserved</p>
+
+        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+        <div class="main-footer__lower">
+            &copy; Copyright 2024. Made by
+            <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/shinasnajeerkoya/"
+            >Shinas Koya</a
+            >
+        </div>
     </div>
 </footer>
 
-
-<!--==================== SCROLL TOP ====================-->
-<div><a href="#" class="scrollup" id="scroll-up">
-    <i class="uil uil-arrow-up scrollup__icon"></i>
-</a></div>
-
-<!--==================== SWIPER JS ====================-->
-<script src="/assets/js/swiper-bundle.min.js"></script>
-
-<!--==================== MAIN JS ====================-->
 <script src="assets/js/main.js"></script>
-
-<!--=================== Animated text ===============-->
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script>
-    var typed = new Typed(".auto-input", {
-        strings: [
-            "an Android developer",
-            "a iOS developer",
-            "a UI Designer",
-        ],
-        typeSpeed: 100,
-        backSpeed: 100,
-        loop: true,
-    });
-</script>
-
-<!--=================== Animate scroll js ===============-->
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init({
-        offset: 300,
-        duration: 2000
-    });
-</script>
-
 </body>
-
 </html>
