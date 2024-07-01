@@ -159,28 +159,38 @@
       ]
     },
     {
-      "id": "pixa_vista",
-      "title": "PixaVista",
-      "subtitle": "Application to get your High Quality wallpaper within a single click.",
-      "subtitleTwoLines": "Application to get your High Quality wallpaper within a single click. Application to get your High Quality wallpaper within a single click.",
-      "productImage": "assets/images/application_assets/1_mockup_thumbnail/mockup_pixavista.png",
-      "projectGithubLink": "https://github.com/rammcodes/dopefolio",
+      "id": "task_hive",
+      "title": "Task Hive",
+      "subtitle": "Simplify Your Daily Task Management Effortlessly.",
+      "subtitleTwoLines": "TaskHive is a sleek and intuitive daily task planner designed for productivity enthusiasts. It's the perfect companion for anyone looking to stay organized and on top of their daily to-dos.",
+      "productImage": "assets/images/application_assets/1_mockup_thumbnail/task_hive_mockup.png",
+      "projectGithubLink": "https://github.com/ShinasNajeerKoya/TaskHive_YourDailyTaskPlanner",
       "projectDetailsUrl": "screens/project_details.html",
-      "description": "PixaVista is an Open-Source project which is a simple and clean multi-page portfolio website template for developers. I created this project for developers to quickly build a good-looking and fast-performing multi-page portfolio without having to code their portfolio from scratch.",
+      "description": [
+        "TaskHive: Your Daily Task Planner is an intuitive app designed to streamline daily task management. Ideal for boosting productivity and staying organized, TaskHive offers a seamless experience for adding, saving, and deleting tasks. It’s perfect for students, professionals, and anyone with a busy schedule needing efficient task tracking.",
+        "Use TaskHive whenever you need to organize your day, whether for work, school, or personal errands. Open the app, tap \"Add\" to input tasks, and save them to stay on top of responsibilities. TaskHive simplifies managing daily activities, allowing you to focus on what truly matters without the hassle of remembering every detail.",
+        "TaskHive stands out for its simplicity and effectiveness. It avoids unnecessary complexity, providing just what you need. With shared preferences, your tasks are saved locally, making it reliable even offline. The app’s clean design and custom fonts enhance the user experience, making task management enjoyable.",
+        "Anyone needing a straightforward task planner can benefit from TaskHive. Whether you’re a student, professional, or busy parent, TaskHive is tailored to meet your needs. Its ease of use and reliability make it a must-have tool for enhancing productivity and staying organized in daily life. As a developer, I'm proud to offer this efficient solution to help you conquer your day with ease."
+      ],
       "snapshots": [
-        "../assets/images/application_assets/iPhone 13 Max.png",
-        "../assets/images/application_assets/iPhone 13 Max.png",
-        "../assets/images/application_assets/iPhone 13 Max.png",
-        "../assets/images/application_assets/iPhone 13 Max.png",
-        "../assets/images/application_assets/iPhone 13 Max.png",
-        "../assets/images/application_assets/iPhone 13 Max.png"
+        "../assets/images/application_assets/task_hive/task_hive_splash.png",
+        "../assets/images/application_assets/task_hive/task_hive_home.png",
+        "../assets/images/application_assets/task_hive/task_hive_open_menu.png",
+        "../assets/images/application_assets/task_hive/task_hive_task_assign.png",
+        "../assets/images/application_assets/task_hive/task_hive_task_list2.png",
+        "../assets/images/application_assets/task_hive/task_hive_task_selection.png",
+        "../assets/images/application_assets/task_hive/task_hive_button_info1.png",
+        "../assets/images/application_assets/task_hive/task_hive_button_info2.png",
+        "../assets/images/application_assets/task_hive/task_hive_task.png",
+        "../assets/images/application_assets/task_hive/task_hive_task_list.png"
       ],
       "skills": [
         "Dart",
-        "CSS",
-        "JavaScript",
-        "SASS",
+        "Flutter",
+        "Figma",
+        "Lottie Animation",
         "GIT",
+        "Dribbble",
         "Github"
       ]
     },
